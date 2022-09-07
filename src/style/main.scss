@@ -1,0 +1,130 @@
+  
+@import './variables.scss';
+@import './classList.scss';
+
+html{
+    font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (2560 - 320)));
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    margin: 0;
+    font-family: $Rubik;
+    overflow: overlay;
+    &::-webkit-scrollbar {
+        width: .3rem; 
+        &-thumb {
+            background-color: $page-404-color;
+            border-radius: .1rem;
+            border: 2px solid $page-404-color;
+        }
+    }
+}
+
+nav{
+    z-index: 4;
+    width: 100%;
+    position: absolute;
+    height: 1rem;
+
+}
+
+section{
+    padding: 0 1.5rem;
+    @media screen and (min-width:768px){
+        padding: 0 3.5rem;
+    }
+}
+
+header{
+    margin-top: 8rem;
+}
+
+h1{
+    font-size: 2.3rem;
+    line-height: 1.3em;
+    font-weight: 500;
+    color: $secondary-color;
+    margin: 0;
+    margin-bottom: .8em;
+}
+
+h2{
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: $primary-color;
+    margin: 0;
+    margin-bottom: 1em;
+    
+    &::after{
+        display: inline-block;
+        content: "";
+        border-bottom: .05em solid;
+        border-color: inherit;
+        width: 5em;
+        vertical-align: middle;
+        margin-left: 1rem;
+        @media screen and (max-width:460px){
+            display: none;
+        }
+    }
+    
+}
+
+h3{
+    font-size: .7rem;
+    line-height: 1.8em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: $accent-color;
+    letter-spacing: 0.25em;;
+    margin: 0;
+    margin-bottom: .3em;
+}
+
+h4{
+    font-size: 1.68rem;
+    line-height: 1.8em;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: $secondary-color;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+p{
+    font-size: .98rem;
+    line-height: 1.5em;
+    color:$text-color;
+    word-wrap: break-word;
+    font-weight:lighter;
+    letter-spacing: .03em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+a{
+    font-size: .9rem;
+    font-weight: normal;
+    color: $link-color;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    transition: 0.3s;
+    &:hover{
+        text-decoration-color: $link-color;
+    }
+}
+
+button{
+    font-family: $Rubik;
+}
+
+@media screen and (max-width: 426px){
+
+    a{
+        text-decoration-color: $link-color;
+    }
+}

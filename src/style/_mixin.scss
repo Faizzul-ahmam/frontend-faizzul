@@ -1,0 +1,11 @@
+
+@mixin moveUp{
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+@mixin hover_moveUp{
+    top: -10px;
+}
+
