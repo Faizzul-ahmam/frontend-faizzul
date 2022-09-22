@@ -14,6 +14,7 @@ const Landing = ({ pageContext:{landing,articles,projects}}) => (
         <Component.SectionProjects
           projects={projects}
         />
+        
         <Component.SectionArticle
           articles={articles}
         />

@@ -22,7 +22,7 @@ exports.createPages = async ({actions: {createPage}}) => {
 
         // Create a page that lists all articles.
         createPage({
-            path: `/insight`,
+            path: `/blogs`,
             component: require.resolve("./src/templates/insight.js"),
             context: {articles} 
         });
@@ -36,7 +36,7 @@ exports.createPages = async ({actions: {createPage}}) => {
         // Create individual article page.
         articles.forEach(article =>{
             createPage({
-                path: `/insight/${article.blob}`,
+                path: `/blogs/${article.blob}`,
                 component: require.resolve("./src/templates/article.js"),
                 context: {article}
             })

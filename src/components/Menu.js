@@ -7,10 +7,10 @@ export const Menu = ({showMenu,setToggle}) =>{
         
         <div className={`menu${showMenu?' show':''}`}>
             <ul>
-                <Link to='#about'><li onClick={setToggle}>About</li></Link>
-                <Link to='#project'><li onClick={setToggle}>Project</li></Link>
-                <Link to='/insight'><li onClick={setToggle}>Insight</li></Link>
-                <Link to='#contact'><li onClick={setToggle}>Contact</li></Link>
+                <Link to='/#about'><li onClick={setToggle}>About</li></Link>
+                <Link to='/#project'><li onClick={setToggle}>Project</li></Link>
+                <Link to='/blogs'><li onClick={setToggle}>Blog</li></Link>
+                <Link to='/#contact'><li onClick={setToggle}>Contact</li></Link>
             </ul>
         </div>
     )
