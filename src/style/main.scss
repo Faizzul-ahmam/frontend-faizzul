@@ -6,6 +6,7 @@ html{
     font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (2560 - 320)));
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    background-color: $primary-color;
 }
 
 body{
@@ -48,6 +49,11 @@ h1{
     color: $secondary-color;
     margin: 0;
     margin-bottom: .8em;
+    
+    &.article-title
+    {
+        color: $primary-color;
+    }
 }
 
 h2{

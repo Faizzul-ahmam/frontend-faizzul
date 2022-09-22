@@ -1,6 +1,7 @@
-import github from './github.svg'
+import github from './github.png'
+import link from './link.png'
 import linkedin from './linkedin.svg'
 
 export default {
-    github,linkedin
+    github,linkedin,link
 }
