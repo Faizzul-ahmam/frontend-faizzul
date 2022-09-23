@@ -2,9 +2,13 @@ import React from 'react'
 import img from '../images/sample.jpg'
 import Component from "../components"
 import nopost from '../images/blog-no-post.png'
+import { Helmet } from 'react-helmet'
 
 const Insight = ({ pageContext:{articles}}) => (
     <div className='wrap'>
+        <Helmet>
+            <title>Blogs</title>
+        </Helmet>
         <Component.Nav/>
         <section id='article' className='page'>
             <header>
