@@ -1,6 +1,7 @@
 import React from "react"
 import potrait from '../images/potrait.png'
 import icons from '../icons'
+import Resume from '../files/Resume.pdf'
 export const SectionAbout = ({about,exp_year}) =>{
 
     return(
@@ -19,10 +20,10 @@ export const SectionAbout = ({about,exp_year}) =>{
                     </div>
                     <p>{about}</p>
                     <div className='social'>
-                        <a href='/'><img src={icons.linkedin}/></a>
-                        <a href='/'><img src={icons.github}/></a>
+                        <a href='https://www.linkedin.com/in/faizzul' target='_blank'><img src={icons.linkedin}/></a>
+                        <a href='https://github.com/Faizzul-ahmam' target='_blank'><img src={icons.github}/></a>
                     </div>
-                    <a href='#'>
+                    <a href={Resume} target='_blank'>
                         <button className='btn'>Download my resume</button>
                     </a>
                 </div>

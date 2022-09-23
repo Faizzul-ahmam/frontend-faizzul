@@ -1,5 +1,5 @@
 import React from "react"
-import {Link} from 'gatsby'
+// import {Link as a} from 'gatsby'
 
 export const Menu = ({showMenu,setToggle}) =>{
 
@@ -7,10 +7,10 @@ export const Menu = ({showMenu,setToggle}) =>{
         
         <div className={`menu${showMenu?' show':''}`}>
             <ul>
-                <Link to='/#about'><li onClick={setToggle}>About</li></Link>
-                <Link to='/#project'><li onClick={setToggle}>Project</li></Link>
-                <Link to='/blogs'><li onClick={setToggle}>Blog</li></Link>
-                <Link to='/#contact'><li onClick={setToggle}>Contact</li></Link>
+                <a href='/#about'><li onClick={setToggle}>About</li></a>
+                <a href='/#project'><li onClick={setToggle}>Project</li></a>
+                <a href='/blogs'><li onClick={setToggle}>Blog</li></a>
+                <a href='/#contact'><li onClick={setToggle}>Contact</li></a>
             </ul>
         </div>
     )
