@@ -1,5 +1,4 @@
 import React from "react"
-import {Button} from './Button'
 
 export const Contact = () =>{
 
@@ -7,8 +6,11 @@ export const Contact = () =>{
         <section id='contact'>
             <div className='txt'>
                 <h3>need to talk?</h3>
-                <h1>Just say hi!</h1>
-                <Button type='btn' text='Contact me' link='mailto:faizzulahmam@gmail.com'/>
+                <h1>Reach me out!</h1>
+                <p>
+                    <span>&#9993; </span>
+                    faizzulahmam@gmail.com
+                </p>
             </div>
         </section>
     )

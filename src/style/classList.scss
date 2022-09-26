@@ -430,6 +430,10 @@
     animation: animatedHand 1s ease-out infinite alternate;
     .txt{
         text-align: center;
+
+        p{
+            color: $link-color;
+        }
     }
 }
 
