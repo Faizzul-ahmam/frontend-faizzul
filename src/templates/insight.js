@@ -22,7 +22,7 @@ const Insight = ({ pageContext:{articles}}) => (
                                     return(
                                         <div key={post.id}>
                                             <figure>
-                                                <img src={post.cover_img?post.cover_img.formats.medium.url:img}></img>
+                                                <img src={post.cover_img?post.cover_img.formats.medium.url:img} alt={post.cover_img.alternativeText?post.cover_img.alternativeText:"default article image"}/>
                                             </figure>
                                             <div className='desc'>
                                                 <h4>{post.title}</h4>

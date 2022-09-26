@@ -11,7 +11,7 @@ export const SectionAbout = ({about,exp_year}) =>{
            </header>
            <article>
                 <figure>
-                    <img src={potrait}/>
+                    <img src={potrait} alt="profile photo of Faizzul"/>
                 </figure>
                 <div className='info'>
                     <div className='exp'>
