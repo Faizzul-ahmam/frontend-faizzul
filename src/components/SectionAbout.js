@@ -20,10 +20,10 @@ export const SectionAbout = ({about,exp_year}) =>{
                     </div>
                     <p>{about}</p>
                     <div className='social'>
-                        <a href='https://www.linkedin.com/in/faizzul' target='_blank'><img src={icons.linkedin}/></a>
-                        <a href='https://github.com/Faizzul-ahmam' target='_blank'><img src={icons.github}/></a>
+                        <a href='https://www.linkedin.com/in/faizzul' target='_blank' rel="noopener noreferrer"><img src={icons.linkedin}/></a>
+                        <a href='https://github.com/Faizzul-ahmam' target='_blank' rel="noopener noreferrer"><img src={icons.github}/></a>
                     </div>
-                    <a href={Resume} target='_blank'>
+                    <a href={Resume} target='_blank' rel="noopener noreferrer">
                         <button className='btn'>Download my resume</button>
                     </a>
                 </div>
